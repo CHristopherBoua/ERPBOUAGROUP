@@ -1,8 +1,10 @@
+import path from 'node:path';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   turbopack: {
-    root: '.',
+    // Use absolute path to avoid Turbopack warning on Vercel
+    root: path.resolve(),
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
