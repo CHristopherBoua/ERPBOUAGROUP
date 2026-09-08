@@ -1,0 +1,79 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// -----------------------------------------------------------------------------
+// ERP BOUA GROUP - Initial Schema
+// -----------------------------------------------------------------------------
+
+// ==========================================
+// Module 12 & Core: Administration & RBAC
+// ==========================================
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  passwordHash  String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  isActive      Boolean   @default(true)
+  filialeId     String?
+  roleId        String?
+  
+  filiale       Filiale?  @relation(fields: [filialeId], references: [id])
+  role          Role?     @relation(fields: [roleId], references: [id])
+}
+
+model Role {
+  id          String   @id @default(cuid())
+  name        String   @unique // e.g., "ADMIN", "HR_MANAGER", "EMPLOYEE"
+  description String?
+  users       User[]
+  permissions Permission[]
+}
+
+model Permission {
+  id          String   @id @default(cuid())
+  name        String   @unique // e.g., "view_dashboard", "manage_users"
+  description String?
+  roles       Role[]
+}
+
+model Filiale {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  code        String   @unique // e.g., "BOUA_TECH", "BOUA_INDUS"
+  country     String
+  currency    String   // e.g., "XOF", "EUR"
+  users       User[]
+  employees   Employee[]
+}
+
+// ==========================================
+// Module 2: Ressources Humaines (HRM)
+// ==========================================
+
+model Employee {
+  id          String   @id @default(cuid())
+  firstName   String
+  lastName    String
+  dateOfBirth DateTime?
+  hireDate    DateTime
+  position    String
+  department  String
+  salary      Float?
+  filialeId   String
+  
+  filiale     Filiale  @relation(fields: [filialeId], references: [id])
+}
+
+// TODO: Add models for other modules (Finance, CRM, Logistics, Procurement, Assets, QHSE, IT, Governance, Analytics) as needed.
