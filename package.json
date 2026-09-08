@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/CHristopherBoua/ERPBOUAGROUP#readme",
   "dependencies": {
+    "@prisma/client": "^7.10.0",
     "clsx": "^2.1.1",
     "lucide-react": "^1.43.0",
     "next": "^16.3.4",
@@ -36,6 +37,7 @@
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.4",
     "postcss": "^8.5.28",
+    "prisma": "^8.0.0-rc.13",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
   }
