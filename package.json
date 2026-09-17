@@ -1,45 +1,33 @@
 {
   "name": "erpbouagroup",
-  "version": "1.0.0",
-  "description": "système de gestion intégrée de BOUA GROUP",
-  "type": "module",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CHristopherBoua/ERPBOUAGROUP.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/CHristopherBoua/ERPBOUAGROUP/issues"
-  },
-  "homepage": "https://github.com/CHristopherBoua/ERPBOUAGROUP#readme",
   "dependencies": {
-    "@prisma/client": "^7.10.0",
-    "@tailwindcss/postcss": "^4.3.3",
     "clsx": "^2.1.1",
-    "lucide-react": "^1.43.0",
-    "next": "^16.3.4",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "tailwind-merge": "^3.6.0"
+    "d3-hierarchy": "^3.1.2",
+    "lucide-react": "^1.47.0",
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "recharts": "^3.10.1",
+    "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
-    "@types/node": "^26.5.0",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.7",
-    "autoprefixer": "^10.5.5",
-    "eslint": "^9.39.5",
-    "eslint-config-next": "^16.3.4",
-    "postcss": "^8.5.28",
-    "prisma": "^8.0.0-rc.13",
-    "tailwindcss": "^4.3.3",
-    "typescript": "^6.0.3"
-  }
+    "@tailwindcss/postcss": "^4",
+    "@types/d3-hierarchy": "^3.1.7",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@10.25.0"
 }

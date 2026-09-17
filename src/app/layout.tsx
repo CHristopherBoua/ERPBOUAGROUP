@@ -1,11 +1,25 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import Sidebar from "@/components/layout/Sidebar";
-import Header from "@/components/layout/Header";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "BOUA GROUP ERP",
-  description: "Système de gestion intégrée multi-filiales du groupe BOUA",
+  title: "BOUA Group ERP",
+  description: "Business of Unified Africa Group — Plateforme ERP intégrée",
+  icons: {
+    icon: "/logo-boua.svg",
+    shortcut: "/logo-boua.svg",
+    apple: "/logo-boua.svg",
+  },
 };
 
 export default function RootLayout({
@@ -14,16 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
-      <body className="bg-background text-foreground antialiased font-sans h-screen flex overflow-hidden">
-        <Sidebar />
-        <div className="flex-1 flex flex-col min-w-0">
-          <Header />
-          <main className="flex-1 overflow-y-auto p-6 bg-muted/20">
-            {children}
-          </main>
-        </div>
-      </body>
+    <html
+      lang="fr"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
