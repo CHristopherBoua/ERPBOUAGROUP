@@ -2,14 +2,14 @@
 
 :root {
   /* BOUA Group — Vert & Or africain */
-  --color-primary: #1B5E20;
-  --color-primary-light: #2E7D32;
-  --color-primary-dark: #0D2818;
+  --color-primary: #DC5E13;
+  --color-primary-light: #E87340;
+  --color-primary-dark: #A8440D;
   --color-accent: #D4A017;
   --color-accent-light: #F0C040;
-  --color-sidebar-bg: #0D2818;
-  --color-sidebar-hover: #1B5E20;
-  --color-sidebar-text: #A5D6A7;
+  --color-sidebar-bg: #DC5E13;
+  --color-sidebar-hover: #A8440D;
+  --color-sidebar-text: #FFE0CC;
   --color-sidebar-text-active: #ffffff;
 
   --background: #F4F6F4;
