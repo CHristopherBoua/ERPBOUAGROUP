@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { Eye, EyeOff, Lock, Mail, Globe } from "lucide-react";
+import { Eye, EyeOff, Lock, Mail, Globe, Fingerprint, QrCode } from "lucide-react";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -22,7 +22,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex bg-[color:var(--color-sidebar-bg)]">
       {/* Panneau gauche — branding */}
-      <div className="hidden lg:flex lg:w-1/2 flex-col justify-between p-12 relative overflow-hidden">
+      <div className="hidden lg:flex lg:w-1/2 flex-col justify-center items-center p-12 relative overflow-hidden">
         {/* Image de fond */}
         <Image
           src="/BG_3.jpg"
@@ -39,42 +39,18 @@ export default function LoginPage() {
           <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-[color:var(--color-accent)] translate-y-1/2 -translate-x-1/2" />
         </div>
 
-        <div className="relative">
-          <div className="mb-12">
-            <Image
-              src="/logo-boua.svg"
-              alt="BOUA Group"
-              width={200}
-              height={56}
-              className="object-contain object-left brightness-0 invert"
-              priority
-            />
-          </div>
-          <h2 className="text-white text-3xl font-bold leading-tight max-w-sm">
-            Votre plateforme ERP panafricaine intégrée
+        <div className="relative flex flex-col items-center text-center gap-8">
+          <Image
+            src="/logo-boua.svg"
+            alt="BOUA Group"
+            width={320}
+            height={90}
+            className="object-contain brightness-0 invert"
+            priority
+          />
+          <h2 className="text-white text-5xl font-extrabold tracking-wide">
+            Bienvenue
           </h2>
-          <p className="text-[color:var(--color-sidebar-text)] text-sm mt-4 max-w-xs leading-relaxed">
-            Gérez l&apos;ensemble de vos filiales, ressources humaines, finances et opérations commerciales en un seul espace unifié.
-          </p>
-        </div>
-
-        {/* Filiales */}
-        <div className="relative space-y-3">
-          <p className="text-[color:var(--color-sidebar-text)] text-xs font-semibold uppercase tracking-wider opacity-60 mb-3">
-            Nos filiales
-          </p>
-          {[
-            "Stratégie & Influence",
-            "Technologies & Transformation Digitale",
-            "Fintech",
-            "Industrie",
-            "Distribution d'équipements industriels",
-          ].map((f) => (
-            <div key={f} className="flex items-center gap-2.5">
-              <div className="w-1.5 h-1.5 rounded-full bg-[color:var(--color-accent)]" />
-              <span className="text-[color:var(--color-sidebar-text)] text-sm">{f}</span>
-            </div>
-          ))}
         </div>
       </div>
 
@@ -175,6 +151,31 @@ export default function LoginPage() {
                 "Se connecter"
               )}
             </button>
+
+            {/* Séparateur */}
+            <div className="flex items-center gap-3">
+              <div className="flex-1 h-px bg-[color:var(--color-border)]" />
+              <span className="text-xs text-[color:var(--color-muted)]">ou</span>
+              <div className="flex-1 h-px bg-[color:var(--color-border)]" />
+            </div>
+
+            {/* Connexion alternative */}
+            <div className="grid grid-cols-2 gap-3">
+              <button
+                type="button"
+                className="flex flex-col items-center justify-center gap-1.5 py-3 rounded-xl border border-[color:var(--color-border)] hover:border-[color:var(--color-primary)] hover:bg-[#FFF0E8] transition-all text-[color:var(--color-muted)] hover:text-[color:var(--color-primary)]"
+              >
+                <Fingerprint size={22} />
+                <span className="text-xs font-medium">Empreinte digitale</span>
+              </button>
+              <button
+                type="button"
+                className="flex flex-col items-center justify-center gap-1.5 py-3 rounded-xl border border-[color:var(--color-border)] hover:border-[color:var(--color-primary)] hover:bg-[#FFF0E8] transition-all text-[color:var(--color-muted)] hover:text-[color:var(--color-primary)]"
+              >
+                <QrCode size={22} />
+                <span className="text-xs font-medium">Scanner QR code</span>
+              </button>
+            </div>
           </form>
 
           {/* Langue */}
