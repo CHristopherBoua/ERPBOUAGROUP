@@ -14,9 +14,9 @@ type KpiCardProps = {
 
 const colorMap = {
   green: {
-    bg: "bg-[#E8F5E9]",
+    bg: "bg-[#FFF0E8]",
     icon: "bg-[color:var(--color-primary)] text-white",
-    border: "border-[#C8E6C9]",
+    border: "border-[#FFD0B0]",
   },
   gold: {
     bg: "bg-[#FFF8E1]",

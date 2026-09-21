@@ -216,7 +216,7 @@ export default function EmployeDetailPage({ params }: PageProps<"/rh/employes/[i
             </div>
             <div className="space-y-3">
               {[
-                { label: "Taux de présence", value: 94, color: "#1B5E20" },
+                { label: "Taux de présence", value: 94, color: "#DC5E13" },
                 { label: "Objectifs atteints", value: 78, color: "#D4A017" },
                 { label: "Score évaluation", value: 85, color: "#1565C0" },
               ].map((m) => (

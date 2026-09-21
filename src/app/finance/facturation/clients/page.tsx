@@ -79,7 +79,7 @@ function FactureRow({ f }: { f: Facture }) {
             <span className="text-[color:var(--color-muted)]">Payé</span>
             <span className="font-medium">{tauxPaiement}%</span>
           </div>
-          <StatBar value={tauxPaiement} max={100} color={tauxPaiement === 100 ? "#1B5E20" : tauxPaiement > 50 ? "#D4A017" : "#EF5350"} />
+          <StatBar value={tauxPaiement} max={100} color={tauxPaiement === 100 ? "#DC5E13" : tauxPaiement > 50 ? "#D4A017" : "#EF5350"} />
         </div>
       )}
       {(f.statut === "brouillon" || f.statut === "payee") && <div className="hidden xl:block w-24" />}

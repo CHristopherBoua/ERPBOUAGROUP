@@ -24,7 +24,7 @@ const data = [
 ];
 
 const filiales = [
-  { key: "strategie", label: "Stratégie & Influence", color: "#1B5E20" },
+  { key: "strategie", label: "Stratégie & Influence", color: "#DC5E13" },
   { key: "fintech", label: "Fintech", color: "#D4A017" },
   { key: "industrie", label: "Industrie", color: "#1565C0" },
   { key: "distribution", label: "Distribution", color: "#6A1B9A" },

@@ -15,7 +15,7 @@ const typeMap: Record<
   { Icon: LucideIcon; bg: string; text: string }
 > = {
   facture: { Icon: FileText, bg: "bg-blue-100", text: "text-blue-600" },
-  conge: { Icon: UserCheck, bg: "bg-green-100", text: "text-green-600" },
+  conge: { Icon: UserCheck, bg: "bg-orange-100", text: "text-orange-600" },
   alerte: { Icon: AlertTriangle, bg: "bg-amber-100", text: "text-amber-600" },
   paiement: { Icon: DollarSign, bg: "bg-emerald-100", text: "text-emerald-700" },
   stock: { Icon: Package, bg: "bg-red-100", text: "text-red-600" },

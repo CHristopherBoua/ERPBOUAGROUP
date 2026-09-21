@@ -79,7 +79,7 @@ function CommissionCard({ c }: { c: Commission }) {
         <StatBar
           value={c.caRealise}
           max={c.caObjectif}
-          color={taux >= 100 ? "#1B5E20" : taux >= 80 ? "#D4A017" : "#EF5350"}
+          color={taux >= 100 ? "#DC5E13" : taux >= 80 ? "#D4A017" : "#EF5350"}
         />
       </div>
 
@@ -181,8 +181,8 @@ export default function CommissionsPage() {
                     iconType="circle" iconSize={8} wrapperStyle={{ fontSize: 11 }}
                     formatter={(v) => v === "sep_ca" ? "CA Sept." : v === "sep_obj" ? "Obj. Sept." : v === "aou_ca" ? "CA Août" : "Obj. Août"}
                   />
-                  <Bar dataKey="sep_ca" fill="#1B5E20" radius={[3, 3, 0, 0]} maxBarSize={18} />
-                  <Bar dataKey="sep_obj" fill="#A5D6A7" radius={[3, 3, 0, 0]} maxBarSize={18} />
+                  <Bar dataKey="sep_ca" fill="#DC5E13" radius={[3, 3, 0, 0]} maxBarSize={18} />
+                  <Bar dataKey="sep_obj" fill="#FFD0B0" radius={[3, 3, 0, 0]} maxBarSize={18} />
                   <Bar dataKey="aou_ca" fill="#D4A017" radius={[3, 3, 0, 0]} maxBarSize={18} />
                   <Bar dataKey="aou_obj" fill="#FFE082" radius={[3, 3, 0, 0]} maxBarSize={18} />
                 </BarChart>

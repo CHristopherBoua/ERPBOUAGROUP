@@ -15,7 +15,7 @@ const sizeMap = {
 };
 
 const colorPalette = [
-  "bg-[#1B5E20]",
+  "bg-[#DC5E13]",
   "bg-[#1565C0]",
   "bg-[#D4A017]",
   "bg-[#6A1B9A]",

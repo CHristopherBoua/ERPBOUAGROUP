@@ -166,7 +166,7 @@ export default function FilialesPage() {
                     </div>
                   </div>
 
-                  <StatBar value={f.caAnnuel} max={f.caObjectif} color={taux >= 100 ? "#1B5E20" : "#D4A017"} />
+                  <StatBar value={f.caAnnuel} max={f.caObjectif} color={taux >= 100 ? "#DC5E13" : "#D4A017"} />
 
                   <div className="flex items-center justify-between mt-3 pt-3 border-t border-[color:var(--color-border)]">
                     <div className="flex items-center gap-1.5 text-xs text-[color:var(--color-muted)]">

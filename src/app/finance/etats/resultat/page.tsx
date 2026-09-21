@@ -112,7 +112,7 @@ export default function CompteResultatPage() {
               <Legend iconType="circle" iconSize={8} wrapperStyle={{ fontSize: 11 }}
                 formatter={(v) => v === "produits" ? "Produits" : v === "charges" ? "Charges" : "Résultat net"} />
               <ReferenceLine y={0} stroke="#E2E8E2" />
-              <Bar dataKey="produits" fill="#1B5E20" radius={[3, 3, 0, 0]} maxBarSize={20} />
+              <Bar dataKey="produits" fill="#DC5E13" radius={[3, 3, 0, 0]} maxBarSize={20} />
               <Bar dataKey="charges" fill="#EF5350" radius={[3, 3, 0, 0]} maxBarSize={20} />
               <Bar dataKey="resultat" fill="#D4A017" radius={[3, 3, 0, 0]} maxBarSize={20} />
             </BarChart>

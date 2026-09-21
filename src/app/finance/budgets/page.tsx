@@ -159,7 +159,7 @@ export default function BudgetsPage() {
                     <StatBar
                       value={catEngage}
                       max={catBudget}
-                      color={catEngage > catBudget ? "#D32F2F" : "#1B5E20"}
+                      color={catEngage > catBudget ? "#D32F2F" : "#DC5E13"}
                     />
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function BudgetsPage() {
                         <StatBar
                           value={b.realise}
                           max={b.budgetRevise}
-                          color={tx > 100 ? "#D32F2F" : tx > 80 ? "#1B5E20" : "#D4A017"}
+                          color={tx > 100 ? "#D32F2F" : tx > 80 ? "#DC5E13" : "#D4A017"}
                         />
                         <div className="flex justify-between text-xs mt-1">
                           <span className="text-[color:var(--color-muted)]">Engagé</span>

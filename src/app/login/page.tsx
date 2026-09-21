@@ -23,6 +23,16 @@ export default function LoginPage() {
     <div className="min-h-screen flex bg-[color:var(--color-sidebar-bg)]">
       {/* Panneau gauche — branding */}
       <div className="hidden lg:flex lg:w-1/2 flex-col justify-between p-12 relative overflow-hidden">
+        {/* Image de fond */}
+        <Image
+          src="/BG_3.jpg"
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Overlay fondant */}
+        <div className="absolute inset-0 bg-[color:var(--color-sidebar-bg)] opacity-75" />
         {/* Motif décoratif */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[color:var(--color-accent)] -translate-y-1/2 translate-x-1/2" />

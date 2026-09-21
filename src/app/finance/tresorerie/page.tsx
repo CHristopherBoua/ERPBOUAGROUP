@@ -104,7 +104,7 @@ export default function TresoreriePage() {
                 />
                 <Legend iconType="circle" iconSize={8} wrapperStyle={{ fontSize: 11 }}
                   formatter={(v) => v === "entrees" ? "Entrées" : v === "sorties" ? "Sorties" : "Solde net"} />
-                <Bar dataKey="entrees" fill="#1B5E20" radius={[3, 3, 0, 0]} maxBarSize={22} />
+                <Bar dataKey="entrees" fill="#DC5E13" radius={[3, 3, 0, 0]} maxBarSize={22} />
                 <Bar dataKey="sorties" fill="#EF5350" radius={[3, 3, 0, 0]} maxBarSize={22} />
                 <Bar dataKey="solde" fill="#D4A017" radius={[3, 3, 0, 0]} maxBarSize={22} />
               </BarChart>
@@ -129,7 +129,7 @@ export default function TresoreriePage() {
                 />
                 <Legend iconType="circle" iconSize={8} wrapperStyle={{ fontSize: 11 }}
                   formatter={(v) => v === "confirme" ? "Confirmé" : "Risqué"} />
-                <Bar dataKey="confirme" fill="#1B5E20" radius={[3, 3, 0, 0]} maxBarSize={30} stackId="a" />
+                <Bar dataKey="confirme" fill="#DC5E13" radius={[3, 3, 0, 0]} maxBarSize={30} stackId="a" />
                 <Bar dataKey="risque" fill="#FFB74D" radius={[3, 3, 0, 0]} maxBarSize={30} stackId="a" />
               </BarChart>
             </ResponsiveContainer>

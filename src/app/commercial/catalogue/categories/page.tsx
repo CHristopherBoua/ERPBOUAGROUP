@@ -278,7 +278,7 @@ export default function CategoriesPage() {
                         <span className="text-xs text-[color:var(--color-foreground)] font-medium truncate flex-1">{filiale}</span>
                         <span className="text-xs text-[color:var(--color-muted)] ml-2 shrink-0">{nbProduits} réf.</span>
                       </div>
-                      <StatBar value={nbProduits} max={totalProduits} color="#1B5E20" />
+                      <StatBar value={nbProduits} max={totalProduits} color="#DC5E13" />
                     </div>
                   );
                 })}

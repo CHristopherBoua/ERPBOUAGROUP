@@ -19,7 +19,7 @@ const filiales: FilialeRow[] = [
     trend: 12.4,
     employes: 124,
     taux: 94,
-    color: "#1B5E20",
+    color: "#DC5E13",
   },
   {
     name: "Technologies & Digital",

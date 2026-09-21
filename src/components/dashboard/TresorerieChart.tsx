@@ -73,7 +73,7 @@ export function TresorerieChart() {
             ]}
           />
           <ReferenceLine y={0} stroke="#E2E8E2" />
-          <Bar dataKey="entrees" fill="#1B5E20" radius={[3, 3, 0, 0]} maxBarSize={20} />
+          <Bar dataKey="entrees" fill="#DC5E13" radius={[3, 3, 0, 0]} maxBarSize={20} />
           <Bar dataKey="sorties" fill="#EF5350" radius={[0, 0, 3, 3]} maxBarSize={20} />
         </BarChart>
       </ResponsiveContainer>

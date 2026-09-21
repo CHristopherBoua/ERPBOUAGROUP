@@ -95,7 +95,7 @@ function EvalCard({ e }: { e: Evaluation }) {
                     <span className="text-[color:var(--color-muted)]">{c.label}</span>
                     <span className="font-medium text-[color:var(--color-foreground)]">{c.note}/5</span>
                   </div>
-                  <StatBar value={c.note} max={5} color={c.note >= 4 ? "#1B5E20" : c.note >= 3 ? "#D4A017" : "#EF5350"} />
+                  <StatBar value={c.note} max={5} color={c.note >= 4 ? "#DC5E13" : c.note >= 3 ? "#D4A017" : "#EF5350"} />
                 </div>
               ))}
             </div>
@@ -173,7 +173,7 @@ export default function EvaluationsPage() {
                 <RadarChart data={radarMoyen}>
                   <PolarGrid stroke="#E2E8E2" />
                   <PolarAngleAxis dataKey="axis" tick={{ fontSize: 12, fill: "#6B7B6B" }} />
-                  <Radar dataKey="value" stroke="#1B5E20" fill="#1B5E20" fillOpacity={0.25} dot={{ r: 4, fill: "#1B5E20" }} />
+                  <Radar dataKey="value" stroke="#DC5E13" fill="#DC5E13" fillOpacity={0.25} dot={{ r: 4, fill: "#DC5E13" }} />
                   <Tooltip
                     contentStyle={{ background: "white", border: "1px solid #E2E8E2", borderRadius: "8px", fontSize: 12 }}
                     formatter={(v) => [`${Number(v).toFixed(0)}/100`, "Score"]}

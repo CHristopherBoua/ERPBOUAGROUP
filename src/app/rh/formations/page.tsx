@@ -82,7 +82,7 @@ function FormationCard({ f }: { f: Formation }) {
             {f.nbParticipants} / {f.maxParticipants}
           </span>
         </div>
-        <StatBar value={f.nbParticipants} max={f.maxParticipants} color={taux >= 100 ? "#1B5E20" : taux >= 75 ? "#D4A017" : "#64B5F6"} />
+        <StatBar value={f.nbParticipants} max={f.maxParticipants} color={taux >= 100 ? "#DC5E13" : taux >= 75 ? "#D4A017" : "#64B5F6"} />
       </div>
 
       <div className="pt-3 border-t border-[color:var(--color-border)] flex items-center justify-between">
