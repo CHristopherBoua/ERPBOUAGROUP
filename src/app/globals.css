@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* BOUA Group — Vert & Or africain */
+  /* BOUA Group — Orange & Or africain */
   --color-primary: #DC5E13;
   --color-primary-light: #E87340;
   --color-primary-dark: #A8440D;
@@ -51,10 +51,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c8d5c8;
+  background: #c8b8a8;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9eb89e;
+  background: #a8886e;
 }

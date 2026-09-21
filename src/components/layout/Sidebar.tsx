@@ -68,7 +68,7 @@ function NavItemRow({
       className={cn(
         "flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors",
         "text-[color:var(--color-sidebar-text)] hover:bg-[color:var(--color-sidebar-hover)] hover:text-white",
-        isActive && "bg-[color:var(--color-accent)] text-white font-medium",
+        isActive && "bg-[color:var(--color-primary)] text-white font-medium",
         depth > 0 && "pl-8"
       )}
     >

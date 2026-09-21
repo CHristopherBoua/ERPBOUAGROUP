@@ -162,14 +162,14 @@ export default function DashboardPage() {
               return (
                 <button
                   key={action.label}
-                  className="flex flex-col items-center justify-center gap-2 p-3 rounded-xl border border-[color:var(--color-border)] hover:border-[color:var(--color-primary)] hover:bg-[#F0F7F0] transition-all text-center relative"
+                  className="flex flex-col items-center justify-center gap-2 p-3 rounded-xl border border-[color:var(--color-border)] hover:border-[color:var(--color-primary)] hover:bg-[#FFF0E8] transition-all text-center relative"
                 >
                   {action.badge && (
                     <span className="absolute top-2 right-2 bg-[color:var(--color-accent)] text-white text-xs font-bold px-1.5 py-0.5 rounded-full min-w-[20px]">
                       {action.badge}
                     </span>
                   )}
-                  <div className="w-9 h-9 rounded-lg bg-[#E8F5E9] flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-lg bg-[#FFF0E8] flex items-center justify-center">
                     <Icon size={18} className="text-[color:var(--color-primary)]" />
                   </div>
                   <span className="text-xs font-medium text-[color:var(--color-foreground)]">

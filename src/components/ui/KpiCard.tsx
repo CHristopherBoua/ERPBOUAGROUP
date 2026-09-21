@@ -35,7 +35,7 @@ const colorMap = {
   },
   orange: {
     bg: "bg-[#FFF3E0]",
-    icon: "bg-[#E65100] text-white",
+    icon: "bg-[color:var(--color-primary)] text-white",
     border: "border-[#FFE0B2]",
   },
 };

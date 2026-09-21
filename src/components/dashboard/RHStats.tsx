@@ -3,7 +3,7 @@
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
 const presenceData = [
-  { name: "Présents", value: 843, color: "#DC5E13" },
+  { name: "Présents", value: 843, color: "#2E7D32" },
   { name: "Absents", value: 67, color: "#EF5350" },
   { name: "Congés", value: 42, color: "#D4A017" },
   { name: "Formation", value: 18, color: "#1565C0" },

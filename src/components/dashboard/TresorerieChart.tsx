@@ -36,7 +36,7 @@ export function TresorerieChart() {
         </div>
         <div className="flex items-center gap-3 text-xs text-[color:var(--color-muted)]">
           <span className="flex items-center gap-1.5">
-            <span className="inline-block w-3 h-2 rounded-sm bg-[color:var(--color-primary)]" />
+            <span className="inline-block w-3 h-2 rounded-sm bg-[#2E7D32]" />
             Entrées
           </span>
           <span className="flex items-center gap-1.5">
@@ -73,7 +73,7 @@ export function TresorerieChart() {
             ]}
           />
           <ReferenceLine y={0} stroke="#E2E8E2" />
-          <Bar dataKey="entrees" fill="#DC5E13" radius={[3, 3, 0, 0]} maxBarSize={20} />
+          <Bar dataKey="entrees" fill="#2E7D32" radius={[3, 3, 0, 0]} maxBarSize={20} />
           <Bar dataKey="sorties" fill="#EF5350" radius={[0, 0, 3, 3]} maxBarSize={20} />
         </BarChart>
       </ResponsiveContainer>
